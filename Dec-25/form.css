@@ -1,0 +1,32 @@
+/* Type Selector */
+h3 {
+    text-align: center;
+}
+
+input {
+    background-color: #E5E5E5;
+    outline: none;
+    border: none;
+    margin: 0.25rem;
+    padding: 0.2rem;
+}
+
+#container {
+    margin: auto;
+    max-width: 50vw;
+}
+
+/* @media (min-width: 500px) {
+    body {
+        background-color: #FF0000;
+    }
+} */
+
+@media (max-width: 500px) {
+    /* body {
+        background-color: #FF0000;
+    } */
+    #container {
+        max-width: 100vw;
+    }
+}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Add two numbers</h2>
+    <form oninput="op.value=parseInt(num1.value) + parseInt(num2.value);">
+        <input name="num1" type="number" placeholder="Number 1" value="0" />
+        <input name="num2" type="number" placeholder="Number 2" value="0"/>
+        <br />
+        <output name="op">0</output>
+    </form>
+
+    <form oninput="op.value=(p1.value == p2.value);">
+        <input name="p1" type="password" placeholder="Number 1"/>
+        <input name="p2" type="password" placeholder="Number 2"/>
+        <br />
+        <output name="op"></output>
+    </form>
+    <!--
+        1. Why output and not para
+        -> Output tag can have a name property.
+        -> Output tag can have a value property.
+    -->
+</body>
+</html>
