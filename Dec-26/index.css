@@ -24,8 +24,8 @@ nav, section, footer {
 }
 
 #carousel {
-    display: flex;
-    justify-content: center;
+    /* display: flex; */
+    /* justify-content: center; */
 }
 
 #carousel {
@@ -33,7 +33,14 @@ nav, section, footer {
 }
 
 #carousel > img {
-    width: 90vw;
+    /* width: 90vw; */
+    cursor: pointer;
+}
+
+.center-align {
+    /* position: absolute; */
+    /* left: 50%; */
+    /* transform: translateX(-50%); */
     /* cursor: pointer; */
 }
 

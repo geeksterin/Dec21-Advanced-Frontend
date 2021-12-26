@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>eWorld</title>
+    <link rel="stylesheet" href="dist/css/splide.min.css">
     <link rel="stylesheet" href="index.css" />
 </head>
 <body>
@@ -22,7 +23,15 @@
     </nav>
 
     <section id="carousel">
-        <img src="carousel.jpg" />
+        <div class="splide">
+            <div class="splide__track">
+                  <ul class="splide__list">
+                      <li class="splide__slide"><img src="carousel.jpg" class="center-align" /></li>
+                      <li class="splide__slide"><img src="carousel.jpg" class="center-align" /></li>
+                      <li class="splide__slide"><img src="carousel.jpg" class="center-align"/></li>
+                  </ul>
+            </div>
+          </div>
     </section>
 
     <section id="products">
@@ -69,7 +78,11 @@
     </footer>
 
     <!-- <div id="animate"></div> -->
-
+    <script src="dist/js/splide.min.js"></script>
     <script src="index.js"></script>
+
+    <script>
+        new Splide('.splide').mount();
+      </script>
 </body>
 </html>
