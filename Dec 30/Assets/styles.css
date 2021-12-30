@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+.navbar{
+    width: 100vw;
+    display: flex;
+    flex-direction:column;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.nav-top,.nav-bottom{
+    width: 100vw;
+    height: 7vh;
+}
+.nav-top{
+    background-color: #2874ef;
+    display: flex;
+    flex-direction: row;
+}
+.nav-bottom{
+    background-color:#fff;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2vw;
+}
+
+.top-left{
+    flex: 1;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2vw;
+}
+.top-right{
+    flex:1;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1vw;
+}
+
+.logo{
+    color: #fff;
+    font-size: 1.2rem;
+    font-family: sans-serif;
+    letter-spacing: 1px;
+}
+
+.search{
+    width: 280px;
+    height: 50%;
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+}
+
+.link{
+    text-decoration: none;
+    color: #fff;
+    font-family: sans-serif;
+    font-size: 1.1rem;
+}
+.dropdown{
+    width: 100px;
+    padding: 5px;
+}
+.link_{
+    text-decoration: none;
+    color: #1e1e1e;
+    font-family: sans-serif;
+    font-size: 1.1rem;
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1vw;
+}
+.ctn-left{
+    height: 100%;
+    background-color:antiquewhite;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ctn-right{
+    height: 100%;
+    flex: 4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1vh;
+    
+}
+tr{
+    
+    height: 50px;
+    background-color: red;
+}
+td{
+    padding: 50px;
+}
+.item-ctn{
+    width:1100PX;
+    height: 400px;
+    background-color: white;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5vw;
+}
+
+.item-left{
+    flex: 3;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3vw;
+    font-family: sans-serif;
+}
+.item-right{
+    flex: 1;
+    height: 100%;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

@@ -18,8 +18,8 @@ body{
 .container{
     width: 500px;
     height: 500px;
+    padding: 10px;
     background-color:var(--primary-color);
- 
     border-radius: 15px;
     padding-top: 20px;
      box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px,
@@ -54,14 +54,14 @@ body{
     font-size: 1rem;
 }
 
-.game-box,.inside-cells{  
+.game-box{  
     display: grid;
-    grid-template-columns: repeat(3,10fr);
-    grid-template-rows: repeat(3,10fr);
-    gap: 3px;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+    gap:10px;
     background-color: #1e1e1e;
 }
-.cell,.inside-cell{
+.cell{
     width:110px;
     height:110px;
     background-color: var(--primary-color);
