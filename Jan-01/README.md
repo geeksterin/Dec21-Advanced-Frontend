@@ -46,10 +46,6 @@ Cons:
 - Rest operator.
 - Prototype.
 
-- Spread Operator.
-- Recursion
-2. Ternary comparison opertor.
-
 
 Q. What is a function?
 -> Collection of statements to perform a task.
