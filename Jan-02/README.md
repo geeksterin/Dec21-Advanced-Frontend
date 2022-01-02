@@ -49,3 +49,6 @@ Assignment (UI based!):
 - Hoisting -> Temporal Dead Zone.
 
 2. Ternary comparison opertor.
+
+
+Further Reading - https://codepen.io/mendieta/pen/WgvENJ
