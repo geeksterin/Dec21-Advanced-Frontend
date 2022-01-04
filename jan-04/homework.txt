@@ -1,0 +1,17 @@
+1. find the difference between window.location.reload(), window.location.reload(true), window.location.reload(false)
+
+
+2.complete the logic for tic tac toe game
+
+
+3. develop a form validator
+
+    --> name = at lease 10 characters
+    --> email = must be a valid email
+    --> password = must contain one Uppercase , one lowercase , one special character and must
+        be of length at least 10
+    --> password2 = must be same as password
+
+    --> on wrong validation , submit button must not work and also input feild have red border
+    --> on correct validation , submit button will work and also input feild have green border
+    --> on correct submit log the data to console
