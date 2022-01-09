@@ -27,11 +27,3 @@ Reference - https://www.timeanddate.com/stopwatch/
 Inspiration 
 - https://dribbble.com
 - https://in.pinterest.com/
-
-
-5. Event Loop (Call Stack, Task Queue)
-6. Promises .then -> Async Await
-7. Web API / Web Workers -> session, cookies / localstorage.
-8. Network Calls -> fetch (XHR)
-9. OOP and ES6 -> constructor and destructor.
-3. Scope Chaining
