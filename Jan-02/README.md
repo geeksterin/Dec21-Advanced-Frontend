@@ -43,12 +43,4 @@ Assignment (UI based!):
 - The UI will be like you have an input type number and then button. Generate the first n numbers in the FizzBuzz series and display it in a list!
 
 
-
-- Scope chaining.
-- Spread Operator.
-- Hoisting -> Temporal Dead Zone.
-
-2. Ternary comparison opertor.
-
-
 Further Reading - https://codepen.io/mendieta/pen/WgvENJ
