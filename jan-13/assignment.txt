@@ -1,0 +1,21 @@
+develop an app with infinite scroll and infinite pictures.
+
+As a user i want to scroll through the app and see different pictures as long as i want.
+
+
+you are free to implement it your way but in order to have infinite pictures you need an api providing infinite pictures.
+
+one such api is unsplash.
+
+
+go to https://unsplash.com/developers and read documentation. how to use it and all !
+
+
+
+hint how to develop this application:
+
+step 1: fetch 10 pictures from unsplash api  ( you can fetch any number of pictures initially )
+
+step 2: render this pictures in browser
+
+step 3: check if user hit the bottom of webpage while scrolling , if yes fetch 10 more pictures and repeat step 1 to 3.
