@@ -21,10 +21,6 @@ If incorrect answer, give the total money and say bye bye.
 If the 30 second timer is done. Then also say bye bye. 👋🏻
 
 
-6. Async Await
-5. Network Calls -> fetch (XHR)
-6. OOP and ES6 -> constructor and destructor.
-7. Scope Chaining
 
 Do you want extra sessions on the Weekdays?
 
