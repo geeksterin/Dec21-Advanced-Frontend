@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Doubts</h2>
+    <script>
+
+        //Creation of empty object.
+        let x = {};
+
+        //Creation of two objects with some data.
+        let y = {name:"Ronny"};
+        let z = {name: "John"};
+
+        //Update the x object with keys as y and z and some values.
+        x[y] = {name:"vivek"};
+        x[z] = {name: "Akki"};
+
+        //When we try to use OBJECTS as a key, JS will convert it into String.
+        //y -> Object
+        //When I convert y into string, what will be the output?. When I converted to string, it became "[object object]"
+        // x[y] -> x["[object object]"]
+        // x[z] -> x["[object object]"]
+        
+        console.log(x);
+
+    </script>
+</body>
+</html>
