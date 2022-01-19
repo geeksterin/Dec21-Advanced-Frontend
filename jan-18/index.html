@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log My Day</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin="" />
+    <script defer src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
+
+   
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+
+</head>
+<body>
+    <div id="conatiner" class="container">
+        <div id="left" class="left">
+            <div class="form-ctn">
+                <form  class="form hidden">
+                    <select   class="options">
+                        <option value="Cycling" class="option">Cycling</option>
+                        <option value="Gym" class="option">Gym</option>
+                        <option value="Swimming" class="option">Swimming</option>
+                        <option value="Cricket" class="option">Cricket</option>
+                    </select>
+                    <input type="text" class="duration" placeholder="Enter the duration in mins">
+                    <button class="submit">Add</button>
+                </form>
+            </div>
+            <div id="list-ctn" class="list-ctn">
+                <div class="list">
+                    <div class="title-ctn">
+                        <h2 class="title-text">Cycling</h2>
+                    </div>
+                    <div class="duration-ctn">
+                        <h2 class="duration-text">30 mins</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="right" class="right">
+            <div id="map" class="map">
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>
