@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Cookies</h2>
+
+    <script>
+        //Create
+        let key = "userid";
+        let val = "aayush";
+        let cookie_str = `${key}=${val}; `;
+        document.cookie = cookie_str;
+
+        //Create another Cookie
+        key = "role";
+        val = "instructor";
+        cookie_str = `${key}=${val}; `;
+        document.cookie = cookie_str;
+
+        //Create anthoer cookie
+        key = "name";
+        val = "Angel Priya";
+        cookie_str = `${key}=${val}; `;
+        document.cookie = cookie_str;
+
+        //Update a Cookie
+        key = "role";
+        val = "";
+        cookie_str = `${key}=${val}; `;
+        document.cookie = cookie_str;
+
+        //Read Cookies
+        let all_cookies = document.cookie;
+        all_cookies = all_cookies.split("; ");
+        const obj = {};
+        all_cookies.forEach(element => {
+            const key = element.split("=")[0];
+            const value = element.split("=")[1];
+            obj[key] = value;
+        });
+        console.log(obj);
+
+    </script>
+</body>
+</html>

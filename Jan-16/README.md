@@ -21,13 +21,5 @@ Released in ES12. Jun/Jul 2021.
 8. Private Class Features (Properties as well as Methods) -> ES12. (Just use #)
 
 
--> Inheritance
--> Polymorphism
-
-
-2. OOPS in depth.
--> 4 Pillars of OOPs and see implementation of them.
-
-
 Assignment 1:
 - The library task which we have already done. Convert it into OOP based. Whatever UI is done, it's okay to keep as it is. IF not DONE. THEN DO SOME UI.(Approach 3)
