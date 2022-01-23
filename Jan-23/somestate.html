@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2> User Dashboard</h2>
+    <script>
+        let all_cookies = document.cookie;
+        all_cookies = all_cookies.split("; ");
+        const obj = {};
+        all_cookies.forEach(element => {
+            const key = element.split("=")[0];
+            const value = element.split("=")[1];
+            obj[key] = value;
+        });
+        console.log(obj);
+        console.log("ABCD");
+
+
+    </script>
+</body>
+</html>

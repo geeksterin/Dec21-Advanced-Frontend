@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h2>XHR Example</h2>
+
+    <script>
+        var xhr = new XMLHttpRequest();
+        xhr.open('GET', "http://localhost:5502/Jan-23/sample.json");
+        xhr.onerror = function () {
+            console.log("Some error happend");
+        }
+
+        xhr.onreadystatechange = function() {
+            if(xhr.readyState == 4) {
+                if(xhr.status == 200) {
+                    console.log("Response received");
+                    var text = xhr.responseText;
+                    console.log(JSON.parse(text));
+                }
+            }
+        }
+
+        xhr.send();
+
+        fetch("http://localhost:5502/Jan-23/sample.json")
+        .then(res => res.json())
+        .then(res => console.log(res))
+        .catch();
+        
+        (async () => {
+            try {
+                let res = await fetch("http://localhost:5502/Jan-23/sample.json");
+                res     = await res.json();
+                console.log(res);
+            } catch(e) {
+                console.log("Something messed up");
+            }
+        })();
+
+        const fn = () => { console.log("ABCD"); return "Hello"; }
+        fn(); //-> Return the response
+
+        const fn = async () => { console.log("ABCD"); return "Hello"; }
+        fn(); //-> Return the promise
+
+
+    </script>
+</body>
+</html>
