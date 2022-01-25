@@ -1,0 +1,13 @@
+body{
+    min-height: 500vh;
+}
+
+.ctn{
+    width: 100px;
+    height: 100px;
+}
+
+.ctn img{
+    width: 400px;
+    height: 400px;
+}
