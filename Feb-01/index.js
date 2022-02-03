@@ -38,3 +38,13 @@ class Programmer extends Person {
 const p = new Programmer("geekster", 33, 9);
 
 p.printInfo();
+
+// const x = 42;
+
+// if (x === 42) {
+//   console.log("hello");
+// } else {
+//   console.log("bye");
+// }
+
+// x === 42 ? console.log("hello") : console.log("bye");
