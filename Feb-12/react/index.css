@@ -1,0 +1,18 @@
+.navbar > h1 {
+    display: inline;
+}
+body {
+    background-color: #E4E4E4;
+}
+
+.navbar {
+    background-color: #FFFFFF;
+}
+
+.gallery-container {
+    display: flex;
+}
+
+.gallery-container > img {
+    width: 30vw;
+}
