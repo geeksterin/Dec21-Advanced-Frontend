@@ -1,6 +1,3 @@
-// import NavigationBar from './nav.js';
-// let NavigationBar = require('./nav.js');
-
 class WelcomeText extends React.Component {
     render() {
         let name = "Aayush";
@@ -19,22 +16,6 @@ class NavigationBar extends React.Component {
                 <button>Search</button>
             </div>
         );
-    }
-}
-
-class Gallery extends React.Component {
-    render() {
-        return (
-            <div className="gallery-container">
-                <img src="#" />
-                <img src="#" />
-                <img src="#" />
-                <img src="#" />
-                <img src="#" />
-                <img src="#" />
-                <img src="#" />
-            </div>
-        )
     }
 }
 
