@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Afterhours</h3>
+    <script>
+        console.clear();
+        let obj = {
+            prop1: "Value 1",
+            fn: function() {
+                console.log("It's a function inside an object");
+            }
+        }
+        obj.__proto__.fn = function() {
+            console.log("This is from prototype")
+        }
+        String.prototype.add = function(a) {
+            return parseInt(this) + parseInt(a);
+        }
+        // console.log(obj);
+        // console.log(obj.toString());
+
+        let str = "1234";
+        console.log(str.add(1000));
+
+        (function() {
+            console.log("ABCD");
+        })();
+    </script>
+</body>
+</html>

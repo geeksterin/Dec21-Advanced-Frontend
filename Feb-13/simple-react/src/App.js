@@ -15,6 +15,8 @@ class App extends React.Component {
     increaseCounter = () => {
         // This is incorrect way to set state.
         // this.setState({counter: this.state.counter + 1});
+        // this.setState({counter: this.state.counter + 1});
+        // this.setState({counter: this.state.counter + 1});
         
         // This is correct way to set state.
         this.setState((previousState) => {
@@ -23,6 +25,18 @@ class App extends React.Component {
                 names: previousState.names,
             }
         });
+        // this.setState((previousState) => {
+        //     return {
+        //         counter: previousState.counter + 1,
+        //         names: previousState.names,
+        //     }
+        // });
+        // this.setState((previousState) => {
+        //     return {
+        //         counter: previousState.counter + 1,
+        //         names: previousState.names,
+        //     }
+        // });
     }
 
     decreaseCounter = () => {
@@ -31,7 +45,7 @@ class App extends React.Component {
                 counter: prev.counter - 1,
                 names: prev.names,
             }
-        })
+        });
     }
 
     render() {
