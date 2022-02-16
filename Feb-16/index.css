@@ -1,0 +1,39 @@
+.app-container {
+  background-color: darkorange;
+}
+
+.card-container {
+  background-color: rgb(187, 229, 230);
+  width: 200px;
+  height: 300px;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.card-container > img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.names > small {
+  margin-left: 10px;
+}
+
+.email,
+.names {
+  text-align: center;
+}
+
+.card-list {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.likes {
+  display: flex;
+  justify-content: center;
+}
+.likes > button {
+  margin: 0 10px;
+}

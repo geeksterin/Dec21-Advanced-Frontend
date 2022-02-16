@@ -4,6 +4,7 @@ import "./App.css";
 import FuncComponent from "./FuncComponent";
 import Folder from "./Folder";
 import File from "./File";
+import HookRadio from "./HookRadio";
 
 class App extends Component {
   constructor(props) {
@@ -16,6 +17,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+        <HookRadio />
         {/* <i className="blue folder icon"></i>
         <i className="caret down icon"></i> 
         <i className="caret right icon"></i>
