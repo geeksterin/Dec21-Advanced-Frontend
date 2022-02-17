@@ -14,6 +14,14 @@ class Card extends React.Component {
     });
   };
 
+  reset = () => {
+    this.setState((prev) => {
+      return {
+        numberOflikes: 0,
+      };
+    });
+  };
+
   dec = () => {
     this.setState((prev) => {
       return {
@@ -37,6 +45,9 @@ class Card extends React.Component {
         <img src={this.props.avatar} />
         <p className="names">
           <small>{this.props.first_name}</small>
+          {/* <GrandChild
+                 abhishek={this.props.first_name}
+                /> */}
           <small>{this.props.last_name}</small>
         </p>
         <p className="email">{this.props.email}</p>
@@ -44,7 +55,11 @@ class Card extends React.Component {
           <button onClick={this.inc}>👍🏻</button>
           {this.state.numberOflikes}
           <button onClick={this.dec}>👎🏻</button>
+          <button onClick={this.reset}>reset</button>
         </div>
+        <button onClick={this.props.changeParentCount}>
+          increase parent count
+        </button>
       </div>
     );
   }

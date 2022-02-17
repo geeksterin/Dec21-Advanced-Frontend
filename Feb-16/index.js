@@ -3,13 +3,15 @@ class App extends React.Component {
     super();
     this.state = {
       geek: [],
+      totalCount: 0,
+      firstValue: 0,
     };
   }
 
   getDataAxios = () => {
     axios.get("https://reqres.in/api/users").then(
       (geekster) =>
-        this.setState((prev) => {
+        this.setState(() => {
           return {
             geek: geekster.data.data,
           };
@@ -33,6 +35,7 @@ class App extends React.Component {
         first_name={item.first_name}
         last_name={item.last_name}
         email={item.email}
+        changeParentCount={this.updateParent}
       />
     ));
   };
@@ -58,10 +61,20 @@ class App extends React.Component {
     });
   };
 
+  updateParent = () => {
+    console.log("this is inside parent");
+    this.setState((prevState) => {
+      return {
+        totalCount: prevState.totalCount + 1,
+      };
+    });
+  };
+
   render() {
     return (
       <div className="app-container">
         this is app
+        <h1>{this.state.totalCount}</h1>
         <div>
           <button onClick={this.getDataAxios}>axios</button>
           <button onClick={this.deleteCard}>delete card</button>
