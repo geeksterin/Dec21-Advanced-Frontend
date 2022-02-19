@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple React App</title>
+    <link rel="stylesheet" href="./index.css" />
+</head>
+<body>
+    <div id="app"></div>
+    <script src="../pckages/react.development.js"></script>
+    <script src="../pckages/react-dom.development.js"></script>
+    <script src="../pckages/babel.min.js"></script>
+    <script src="./index.js"></script>
+
+    <script type="text/babel" src="../src/CityInfo.js"></script>
+    <script type="text/babel" src="../src/Search.js"></script>
+    <script type="text/babel" src="../src/Heading.js"></script>
+    <script type="text/babel" src="../src/App.js"></script> 
+    
+    <script type="text/babel">
+        ReactDOM.render(
+            <App />, document.getElementById('app')
+        );
+    </script>
+</body>
+</html>
