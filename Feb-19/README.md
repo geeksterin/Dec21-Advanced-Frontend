@@ -24,35 +24,8 @@ React Element - The return part of a component.
 Assignment 1:
 Use this code and improve the functionality and allow search for multiple cities. (Basically you need to maintain an array of all the city infos).
 
-3. Stateless vs Statefull
-4. Fragments.
-5. Inline style.
-6. Higher Order Components.  First Order Components
-7. Pure Components / Impure Components.
-
 Afterhours (Revision):
 1. State / Props
 2. Components
 3. Todo List Equivalent
 4. Conditional Rendering (if else)
-
-
-
-
-
-
-
-
-2. NodeJS (>14), install CRA, npx CRA.
-3. NPM vs NPX.
-5. package.json
-6. devDependencies vs dependencies.
-7. Hosting of React. (Netlify and Heroku)
-9. Functional and Classes. 
-14. Fetch is done. Axios is not done.
-16. Router is not done.
-17. Lifecycle ❌
-18. Events ❌
-19. JSX.
-20. Data binding ❌
-
