@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample Redux</title>
+</head>
+<body>
+    <button id="like">👍🏻</button>
+    <span>Likes: <span id="like_counter"></span></span>
+    <button id="dislike">👎🏻</button>
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/redux/5.0.0-alpha.0/redux.js"></script>
+    <script>
+        const reducer = (previousState, action) => {
+            if(previousState === undefined) {
+                return 0;
+            }
+
+            let newState = 0;
+            
+            switch(action.type) {
+                case 'LIKE':
+                    newState = previousState + 1;
+                    break;
+                case 'DISLIKE':
+                    newState = previousState - 1;
+                    break;
+                default:
+                    newState = previousState;
+                    break;
+            }
+
+            return newState;
+        }
+
+        const render = () => {
+            document.getElementById('like_counter').innerText = store.getState();
+        }
+
+        const store = Redux.createStore(reducer);
+
+        document.getElementById('like').addEventListener('click', () => {
+            store.dispatch({type: 'LIKE'});
+        });
+
+        document.getElementById('dislike').addEventListener('click', () => {
+            store.dispatch({type: 'DISLIKE'});
+        });
+
+        store.subscribe(render);
+
+        // store.getState(); //Get the value
+        // const action = {
+        //     type: 'like'
+        // };
+        // store.dispatch(action); //Set the value
+
+
+    </script>
+</body>
+</html>
