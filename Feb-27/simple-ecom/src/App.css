@@ -16,7 +16,6 @@ body {
 
 .single-product > img {
   max-width: 200px;
-  text-align: center;
   max-height: 200px;
 }
 
@@ -24,7 +23,8 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  gap: 10px;
+  gap: 2rem;
+  text-align: center;
 }
 
 header > h1 {
