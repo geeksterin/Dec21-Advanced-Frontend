@@ -56,7 +56,7 @@ npm run <custom-script>
 4. Stateless vs Statefull.
 -> Components which use the React State are Stateful and which doesn't use State are stateless.
 
-10. Redux
+5. Redux
 -> It is a state management tool.
 --> State <-> Data
 --> Data of whole application.
@@ -69,36 +69,13 @@ Alternatives:
 -> MobX
 -> Pull State
 
-11. Redux using vanilla JS.
+6. Redux using vanilla JS.
 -> Like / Dislike Counter.
 
 -> Redux CDN
 https://cdnjs.cloudflare.com/ajax/libs/redux/5.0.0-alpha.0/redux.js
 
-
-12. Action / Reducer / Store and View (4 pillars of Redux)
-
-
-
-
-
-
-
-
-3. dependencies vs dev dependencies vs peer dependencies.
-6. forwardRef
-7. Controlled vs Uncontrolled. (Data binding)
-8. Higher Order Components.  First Order Components
-9. Pure Components / Impure Components.
-
-
-13. Redux with React (react-redux).
--> E-Commerce Checkout page. (NPM)
-
-
-14. Strict Mode
-15. Routers
-16. Error Boundaries
+7. Action / Reducer / Store and View (4 pillars of Redux)
 
 Assignment 1:
 -> Create a color picker and when I pick any color, change the background and give same color.
@@ -107,17 +84,3 @@ You need to use 2 component, App and Picker.js. Use State Lifting
 
 Assignment 2:
 Make a Notes app using Redux and JS (Vanilla).
-
-
-
-
-
-2. NodeJS (>14), install CRA, npx CRA.
-3. NPM vs NPX.
-5. package.json
-6. devDependencies vs dependencies.
-7. Hosting of React. (Netlify and Heroku)
-9. Functional and Classes. 
-14. Fetch is done. Axios is not done.
-16. Router is not done.
-
