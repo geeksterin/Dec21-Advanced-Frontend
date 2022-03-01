@@ -1,0 +1,42 @@
+body {
+  margin: 1rem;
+}
+
+.single-product {
+  width: 200px;
+  padding: 10px;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+}
+
+.single-product:hover {
+  box-shadow: 5px 5px 2px #EFEFEF;
+  border-color: gray;
+}
+
+.single-product > img {
+  max-width: 200px;
+  max-height: 200px;
+}
+
+.product-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 2rem;
+  text-align: center;
+}
+
+header > h1 {
+  display: inline;
+}
+
+header > button {
+  float: right;
+}
+
+header {
+  border-bottom: 1px solid lightgray;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
