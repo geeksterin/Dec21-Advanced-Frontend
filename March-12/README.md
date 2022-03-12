@@ -18,3 +18,10 @@ For icons ->
 npm install @mui/icons-material
 
 CSS Flexbox - https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+
+
+Commonly:
+-> Arrays
+-> String maipulation
+-> Linked List (Traversal, search, loop detection, merging or swapping).
+-> Stacks and Queues.
