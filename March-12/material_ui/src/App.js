@@ -1,23 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
-import Container from '@mui/material/Container';
 import Header from './components/Header';
-import MovieCard from './components/MovieCard';
-import Grid from '@mui/material/Grid';
+import Search from './routes/Search';
+import Home from './routes/Home';
+import Detail from './routes/Detail';
+import NotFound from './routes/NotFound';
+import {Routes, Route} from 'react-router-dom';
 
-function App() {
+const App = () => {
   return (
     <div className="App">
       <Header />
-      <Container maxWidth="xl" sx={{mt: 4}}>
-        <Grid container spacing={{ xs: 2, md: 3 }} columns={{ xs: 1, sm: 2, md: 3, lg: 4, xl:6 }}>
-          {Array.from(Array(6)).map((_, index) => (
-            <Grid item key={index}>
-              <MovieCard />
-            </Grid>
-          ))}
-        </Grid>
-      </Container>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/search" element={<Search />} />
+        <Route path="/detail/:id" element={<Detail />} />
+        <Route path="*" element={<NotFound />} />
+      </Routes>
     </div>
   );
 }
