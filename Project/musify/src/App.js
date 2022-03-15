@@ -5,6 +5,10 @@ import TopNav from './components/TopNav';
 import PlayerContainer from './components/PlayerContainer';
 import MainContainer from './components/MainContainer';
 import SideNav from './components/SideNav';
+import TopArtistContainer from './components/TopArtistContainer';
+import {Routes, Route} from 'react-router-dom';
+import ArtistPage from './components/ArtistPage';
+
 const App = () => {
 
   return (
@@ -14,7 +18,13 @@ const App = () => {
       <CssBaseline />
       <TopNav />
       <SideNav />
-      <MainContainer />
+      <Box sx={{mb: 8}}>
+        <Routes>
+          <Route path="/" element={<MainContainer />} />
+          <Route path="/top/artists" element={<TopArtistContainer />} />
+          <Route path="/artists/:artist_id" element={<ArtistPage />} />
+        </Routes>
+      </Box>
       
     </Box>
         <PlayerContainer />
