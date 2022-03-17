@@ -5,7 +5,7 @@ import Grid from '@mui/material/Grid';
 import { NAPSTER_API_KEY } from '../constants';
 import SongCard from './SongCard';
 
-const MainContainer = () => {
+const TopSongsContainer = () => {
     const [songsList, setSongsList] = useState([]);
 
     useEffect(() => {
@@ -30,4 +30,4 @@ const MainContainer = () => {
   )
 }
 
-export default MainContainer
+export default TopSongsContainer;

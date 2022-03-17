@@ -1,17 +1,13 @@
-import React, { useRef, useState, useEffect } from 'react'
-import Paper from '@mui/material/Paper';
-import Stack from '@mui/material/Stack';
-import Box from '@mui/material/Box';
-import Slider from '@mui/material/Slider';
+import React, { useRef, useState, useEffect } from 'react';
+import { Paper, Stack, Box, Slider, Fab, IconButton } from '@mui/material';
+import { useSelector } from 'react-redux';
+
 import VolumeDown from '@mui/icons-material/VolumeDown';
 import VolumeUp from '@mui/icons-material/VolumeUp';
 import SkipPreviousIcon from '@mui/icons-material/SkipPrevious';
 import PlayArrowIcon from '@mui/icons-material/PlayArrow';
 import SkipNextIcon from '@mui/icons-material/SkipNext';
-import Fab from '@mui/material/Fab';
-import IconButton from '@mui/material/IconButton';
 import PauseIcon from '@mui/icons-material/Pause';
-import { useSelector } from 'react-redux';
 
 const PlayerContainer = () => {
     const [volume, setVolume] = useState(50);
@@ -19,11 +15,19 @@ const PlayerContainer = () => {
     const [isPlaying, setPlaying] = useState(false);
     const audioPlayer = useRef(null);
 
-    const appState = useSelector((state) => state);
+    const appState = useSelector((state) => {
+      return state;
+    });
 
     useEffect(() => {
       audioPlayer.current.volume = (volume / 100);
     }, [volume]);
+
+    useEffect(() => {
+      setPlayTime(0);
+      audioPlayer.current.play();
+      setPlaying(true);
+    }, [appState]);
 
     const changeVolume = (_, volume) => {
         setVolume(volume);
