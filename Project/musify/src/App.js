@@ -13,6 +13,8 @@ import TopAlbumsContainer from './components/TopAlbumsContainer';
 import AlbumPage from './components/AlbumPage';
 import SearchContainer from './components/SearchContainer';
 import { useTheme, ThemeProvider, createTheme } from '@mui/material/styles';
+import FavouriteListContainer from './components/FavouriteListContainer';
+import PlaylistContainer from './components/PlaylistContainer';
 
 const App = () => {
 
@@ -58,6 +60,8 @@ const App = () => {
             <Route path="/albums/:album_id" element={<AlbumPage />} />
             <Route path="/top/songs" element={<TopSongsContainer />} />
             <Route path="/search/:query" element={<SearchContainer />} />
+            <Route path="/favourites" element={<FavouriteListContainer />} />
+            <Route path="/playlist" element={<PlaylistContainer />} />
           </Routes>
         </Box>
         

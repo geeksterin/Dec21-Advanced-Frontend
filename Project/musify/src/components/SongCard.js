@@ -11,7 +11,7 @@ const SongCard = (props) => {
     const image_url = `https://api.napster.com/imageserver/v2/albums/${props.data?.albumId}/images/200x200.jpg`;
     
     const changeSong = () => {
-        dispatch(setPlayNow(props.data?.previewURL, image_url));
+        dispatch(setPlayNow(props.data));
     }
     
     return (

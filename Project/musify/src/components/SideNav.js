@@ -67,18 +67,22 @@ export default function ClippedDrawer() {
           </List>
           <Divider />
           <List>
-            <ListItem button>
-              <ListItemIcon>
-                <FavoriteIcon />
-              </ListItemIcon>
-              <ListItemText primary="My Favourites" />
-            </ListItem>
-            <ListItem button>
-              <ListItemIcon>
-                <QueueMusicIcon />
-              </ListItemIcon>
-              <ListItemText primary="My Playlist" />
-            </ListItem>
+            <Link to="/favourites" style={{textDecoration: "none"}}>
+              <ListItem button>
+                <ListItemIcon>
+                  <FavoriteIcon />
+                </ListItemIcon>
+                <ListItemText primary="My Favourites" />
+              </ListItem>
+            </Link>
+            <Link to="/playlist" style={{textDecoration: "none"}}>
+              <ListItem button>
+                <ListItemIcon>
+                  <QueueMusicIcon />
+                </ListItemIcon>
+                <ListItemText primary="My Playlist" />
+              </ListItem>
+            </Link>
           </List>
         </Box>
       </Drawer>

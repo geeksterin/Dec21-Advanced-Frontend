@@ -35,11 +35,10 @@ const ArtistPage = () => {
             
 
             <TableContainer component={Paper} sx={{mt: 12}}>
-                <Table sx={{ minWidth: 650 }} aria-label="simple table">
+                <Table size="small" sx={{ minWidth: 650 }} aria-label="simple table">
                     <TableHead>
                         <TableRow>
-                            <TableCell></TableCell>
-                            <TableCell></TableCell>
+                            <TableCell>#</TableCell>
                             <TableCell>
                                 <Typography variant='h6'>Name</Typography>
                             </TableCell>
